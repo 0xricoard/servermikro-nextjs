@@ -45,7 +45,7 @@ const About = () => {
   const stats = [
     { number: '99.9%', label: 'Uptime Guarantee', color: 'text-blue-600 dark:text-blue-400' },
     { number: '5+', label: 'Global Locations', color: 'text-purple-600 dark:text-purple-400' },
-    { number: '1000+', label: 'Happy Clients', color: 'text-indigo-600 dark:text-indigo-400' },
+    { number: '350+', label: 'Happy Clients', color: 'text-indigo-600 dark:text-indigo-400' },
     { number: '24/7', label: 'Support Available', color: 'text-blue-600 dark:text-blue-400' },
   ];
 
