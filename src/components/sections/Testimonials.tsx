@@ -63,7 +63,7 @@ const Testimonials = () => {
     },
     {
       id: 6,
-      name: 'Maria Garcia',
+      name: 'Emilia Everlynn',
       role: 'Content Creator',
       company: 'Freelance',
       rating: 5,
