@@ -47,10 +47,10 @@ const Navigation = () => {
             transition={{ delay: 0.1 }}
             className="flex items-center space-x-2"
           >
-            <div className="bg-gradient-to-br from-blue-500 to-purple-600 p-2 rounded-lg">
-              <Server className="h-6 w-6 text-white" />
+            <div className="bg-gradient-to-br from-blue-500 to-purple-600 p-1.5 sm:p-2 rounded-lg flex-shrink-0">
+              <Server className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
             </div>
-            <span className="text-xl font-bold gradient-text">Server Mikro</span>
+            <span className="text-base sm:text-lg md:text-xl font-bold gradient-text truncate">Server Mikro</span>
           </motion.div>
 
           {/* Desktop Navigation */}
@@ -78,25 +78,26 @@ const Navigation = () => {
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2 }}
-            className="hidden md:flex items-center space-x-4"
+            className="hidden md:flex items-center space-x-2 lg:space-x-4"
           >
             <ThemeToggle />
             <Link
               href="https://my.servermikro.com/login"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center space-x-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-2 rounded-lg hover:from-blue-600 hover:to-purple-700 transition-all duration-200 font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+              className="inline-flex items-center space-x-1 lg:space-x-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white px-3 lg:px-6 py-2 rounded-lg hover:from-blue-600 hover:to-purple-700 transition-all duration-200 font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 text-sm lg:text-base"
             >
               <span>Client Area</span>
-              <ExternalLink className="h-4 w-4" />
+              <ExternalLink className="h-3 w-3 lg:h-4 lg:w-4" />
             </Link>
           </motion.div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="flex items-center space-x-2 md:hidden">
+            <ThemeToggle />
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-900 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 focus:outline-none"
+              className="text-gray-900 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 focus:outline-none p-2"
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
@@ -142,11 +143,11 @@ const Navigation = () => {
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: (navItems.length + 1) * 0.1 }}
+                transition={{ delay: navItems.length * 0.1 }}
                 className="px-3 py-2"
               >
                 <Link
-                  href="https://client.servermikro.com/login"
+                  href="https://my.servermikro.com/login"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center space-x-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white px-4 py-2 rounded-lg hover:from-blue-600 hover:to-purple-700 transition-all duration-200 font-medium w-full justify-center"
