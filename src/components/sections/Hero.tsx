@@ -120,7 +120,7 @@ const Hero = () => {
               <div className="text-xs sm:text-sm md:text-base text-gray-600 dark:text-gray-400 font-medium">Locations</div>
             </div>
             <div className="text-center">
-              <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-blue-600 dark:text-blue-400">1000+</div>
+              <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-blue-600 dark:text-blue-400">350+</div>
               <div className="text-xs sm:text-sm md:text-base text-gray-600 dark:text-gray-400 font-medium">Clients</div>
             </div>
           </motion.div>
