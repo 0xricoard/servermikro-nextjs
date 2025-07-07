@@ -139,7 +139,7 @@ const Contact = () => {
               animate={isInView ? { opacity: 1, x: 0 } : {}}
               transition={{ delay: 0.6, duration: 0.8 }}
             >
-              <h3 className="text-2xl font-bold mb-8">Contact Information</h3>
+              <h3 className="text-2xl font-bold mb-8 text-gray-800 dark:text-white">Contact Information</h3>
               <div className="space-y-6">
                 {contactInfo.map((info, index) => (
                   <motion.div
@@ -147,24 +147,24 @@ const Contact = () => {
                     initial={{ opacity: 0, y: 30 }}
                     animate={isInView ? { opacity: 1, y: 0 } : {}}
                     transition={{ delay: 0.8 + index * 0.1, duration: 0.6 }}
-                    className="flex items-start space-x-4 p-4 bg-white/10 backdrop-blur-sm rounded-xl hover:bg-white/20 transition-colors duration-300"
+                    className="flex items-start space-x-4 p-4 bg-gray-50 dark:bg-white/10 backdrop-blur-sm rounded-xl hover:bg-gray-100 dark:hover:bg-white/20 transition-colors duration-300"
                   >
                     <div className="p-3 bg-blue-500 rounded-lg">
                       <info.icon className="h-6 w-6" />
                     </div>
                     <div>
-                      <h4 className="text-lg font-semibold mb-1">{info.title}</h4>
+                      <h4 className="text-lg font-semibold mb-1 text-gray-800 dark:text-white">{info.title}</h4>
                       {info.link ? (
                         <Link 
                           href={info.link}
-                          className="text-blue-300 hover:text-blue-200 transition-colors"
+                          className="text-blue-600 dark:text-blue-300 hover:text-blue-800 dark:hover:text-blue-200 transition-colors"
                         >
                           {info.content}
                         </Link>
                       ) : (
-                        <p className="text-blue-300">{info.content}</p>
+                        <p className="text-blue-600 dark:text-blue-300">{info.content}</p>
                       )}
-                      <p className="text-gray-400 text-sm">{info.description}</p>
+                      <p className="text-gray-500 dark:text-gray-400 text-sm">{info.description}</p>
                     </div>
                   </motion.div>
                 ))}
@@ -176,9 +176,9 @@ const Contact = () => {
               initial={{ opacity: 0, x: 50 }}
               animate={isInView ? { opacity: 1, x: 0 } : {}}
               transition={{ delay: 0.6, duration: 0.8 }}
-              className="bg-white/10 backdrop-blur-sm rounded-2xl p-8"
+              className="bg-gray-50 dark:bg-white/10 backdrop-blur-sm rounded-2xl p-8"
             >
-              <h3 className="text-2xl font-bold mb-6">Send us a Message</h3>
+              <h3 className="text-2xl font-bold mb-6 text-gray-800 dark:text-white">Send us a Message</h3>
               
               {submitStatus === 'success' && (
                 <div className="mb-6 p-4 bg-green-500/20 border border-green-500/50 rounded-lg flex items-center space-x-3">
