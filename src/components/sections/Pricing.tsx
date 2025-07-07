@@ -339,9 +339,9 @@ const Pricing = () => {
         >
           <div className="p-4 sm:p-6 bg-gray-50 dark:bg-gray-800 rounded-xl">
             <Shield className="h-10 w-10 sm:h-12 sm:w-12 text-blue-500 mx-auto mb-3 sm:mb-4" />
-            <h4 className="text-base sm:text-lg font-bold mb-2 text-gray-800 dark:text-gray-200">30-Day Money Back</h4>
+            <h4 className="text-base sm:text-lg font-bold mb-2 text-gray-800 dark:text-gray-200">7-Day Money Back*</h4>
             <p className="text-gray-600 dark:text-gray-400 text-sm">
-              Not satisfied? Get a full refund within 30 days, no questions asked.
+              Not satisfied? Get a full refund within 7 days, no questions asked. *applies only to all hosting products. 
             </p>
           </div>
           <div className="p-4 sm:p-6 bg-gray-50 dark:bg-gray-800 rounded-xl">
