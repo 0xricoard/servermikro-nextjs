@@ -39,11 +39,11 @@ const Pricing = () => {
         'Free Subdomain',
         '🇸🇬 Singapore Location',
         '24/7 Email Support',
-        'One-click WordPress Install'
+        'One-click WordPress Install',
+        'Custom Software Installation'
       ],
       notIncluded: [
-        'Root Access',
-        'Custom Software Installation'
+        'Root Access'
       ],
       link: 'https://my.servermikro.com',
       gradient: 'from-blue-500 to-blue-600'
