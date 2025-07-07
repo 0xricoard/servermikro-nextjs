@@ -79,7 +79,7 @@ const Contact = () => {
       title: 'Live Chat',
       content: 'WhatsApp Support',
       description: 'Quick response via WhatsApp',
-      link: 'https://wa.me/yourwhatsappnumber'
+      link: 'https://wa.me/62895365906433'
     }
   ];
 
