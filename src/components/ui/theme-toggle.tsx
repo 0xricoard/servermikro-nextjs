@@ -5,7 +5,7 @@ import { useTheme } from './theme-provider';
 import { motion } from 'framer-motion';
 
 export function ThemeToggle() {
-  const { theme, setTheme, resolvedTheme } = useTheme();
+  const { theme, setTheme } = useTheme();
 
   const cycleTheme = () => {
     if (theme === 'light') {
