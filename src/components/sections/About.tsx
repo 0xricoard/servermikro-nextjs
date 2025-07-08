@@ -32,8 +32,8 @@ const About = () => {
     },
     {
       icon: HardDrive,
-      title: 'SSD Storage',
-      description: 'High-performance enterprise SSD storage for faster data access and improved reliability.',
+      title: 'Premium NVMe & SSD Storage',
+      description: 'High-performance enterprise NVMe & SSD storage for faster data access and improved reliability.',
     },
     {
       icon: Server,
