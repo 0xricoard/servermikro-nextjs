@@ -35,13 +35,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <head>
-        {/* Google AdSense */}
-        <Script
+       <head>
+        <script
           async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9917389238286564"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js? client=ca-pub-9917389238286564"
           crossOrigin="anonymous"
-          strategy="afterInteractive"
         />
       </head>
       <body className={`${inter.variable} font-sans antialiased`}>
